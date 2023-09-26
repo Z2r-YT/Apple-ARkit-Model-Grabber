@@ -1,0 +1,56 @@
+.charmsbar{
+    width: 70px;
+    background-color: black;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    font-size: 0.7em;
+    color: #8b8b8b;
+    font-family: Segoe UI, sans-serif;
+    z-index: 99999999999998;
+    right: -71px;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.090, 0.420, 0.000, 1.010); /* custom */
+}
+
+.charmsbar > div > p{
+    width: 62px;
+    user-select: none;
+    cursor: default;
+    margin: 0;
+}
+
+.charmsbar > div{
+    transition-duration: .1s;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.charmsbar > div:hover{
+    background-color: #4a4a4a;
+}
+
+.charmsbar > div:active{
+    transition-duration: 0s;
+    background-color: #242424;
+}
+
+.charmshover{
+    width: 70px;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    /* outline: solid 2px red; */
+    z-index: 99999999999999;
+}
+
+.charmshover:hover > .charmsbar{
+    right: 0px;
+}
